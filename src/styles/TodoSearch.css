@@ -1,0 +1,12 @@
+.todo-search {
+  position: absolute;
+  z-index: 999;
+  bottom: -40%;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.todo-search::placeholder {
+  color: black;
+  text-transform: uppercase;
+}

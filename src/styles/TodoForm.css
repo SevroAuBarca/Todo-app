@@ -1,0 +1,44 @@
+.form-todo {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 300px;
+  height: 40vh;
+  border-radius: 15px;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label-todo {
+  font-size: 30px;
+}
+.area-todo {
+  width: 60%;
+  height: 20vh;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+}
+.area-todo::placeholder {
+  color: black;
+}
+
+.button-todo {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.button-todo.cancel {
+  background: transparent;
+  color: white;
+}
+
+.button-todo.create:hover {
+  background: rgb(130, 108, 186);
+}

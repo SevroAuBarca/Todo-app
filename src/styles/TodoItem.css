@@ -1,0 +1,51 @@
+.todo-li {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.todo-li-item {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+  transition: 0.3s all ease;
+}
+
+.todo-li-item.check {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.completed:hover {
+  color: rgb(35, 204, 35);
+  filter: drop-shadow(0 0 2rem rgb(25, 155, 25));
+}
+
+.todo-li-item.exit {
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.todo-li-item.exit:hover {
+  color: rgb(226, 33, 33);
+}
+.todo-li-item.text {
+  width: 100%;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.todo-li-item.text.completed {
+  text-decoration: line-through;
+  color: #000;
+}
